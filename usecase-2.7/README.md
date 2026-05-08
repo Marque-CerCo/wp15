@@ -10,15 +10,19 @@ This is a specific use case that serves as a prototype for development and testi
 
 ## Summary of the input data
 
-This dataset pertains to an fMRI study investigating the brain mechanisms underlying visual and multisensory recognition in 12 healthy participants (8 females; mean age = 28.06 years). Participants performed a short-term memory task involving auditory, visual, and audio‑visual stimuli, recognizing and remembering objects in different multisensory contexts. The dataset is organized in BIDS format (2.17 GB) and includes, for each participant, anatomical images (T1w.nii.gz), functional data (task-memory_run-_bold.nii.gz), and event files (_events.tsv) detailing conditions, responses, and reaction times. This dataset is intended as a standardized resource for the scientific community. It has already been used to test an automated fMRI analysis pipeline capable of preprocessing, motion correction, spatial normalization, and preparation of data for univariate and multivariate analyses, allowing evaluation of method robustness and reproducibility.
+This dataset contains fMRI recordings from 6 participants collected across 10 to 11 scanning sessions per subject, during which they were exposed to more than 8,000 stimuli composed of natural scene images and their associated textual captions. Each session consisted of 13 to 16 functional runs, with every run containing sequences of image and text stimuli presented in random order, interleaved with fixation periods and occasional mental imagery trials. The stimuli were selected from the COCO dataset and were designed to investigate shared semantic representations across visual perception, language processing, and mental imagery.
+
+During the experiment, participants performed a one-back matching task in which they identified whether consecutive stimuli matched either within the same modality (image–image or text–text) or across modalities (image–text). In addition to perceptual trials, the dataset includes guided mental imagery sessions where participants imagined scenes associated with previously learned captions. Repeated presentations of a shared subset of stimuli were also included to improve signal reliability and support benchmarking analyses.
+
+The dataset follows the BIDS organization standard and includes subject-specific folders containing anatomical and functional MRI scans for each session, stimulus files with image references and corrected captions, and participant drawings produced after the imagery tasks. It also provides preprocessed beta maps for training, test, and imagery conditions in both volumetric and surface-based representations.
 
 ## Data citation
 
-_Please specify how the data should be cited, for example by pointing to a previous paper that uses the data._
+https://doi.org/10.7554/eLife.107933
 
 ## Legal aspects of the input data
 
-_Please specify that the data cannot be shared for privacy reasons._
+License CCO
 
 # Data user
 
